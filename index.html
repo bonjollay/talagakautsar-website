@@ -3,297 +3,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madrasah Diniyah Talaga Kautsar - Pendidikan Islami Terpadu</title>
+    <title>Madrasah Diniyah Talaga Kautsar Pandeglang</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <i class="fas fa-mosque"></i>
+            <span>Loading...</span>
+        </div>
+    </div>
+
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-mosque"></i>
-                <span>Madrasah Diniyah Talaga Kautsar</span>
+                <i class="fas fa-seedling"></i>
+                <strong>MD Talaga Kautsar</strong>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Beranda</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#profil" class="nav-link">Profil</a></li>
-                <li class="dropdown">
-                    <a href="#pendidikan" class="nav-link dropdown-toggle">Pendidikan <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#mi">MI</a></li>
-                        <li><a href="#mts">MTs</a></li>
-                        <li><a href="#ma">MA</a></li>
-                        <li><a href="#diniyah">Diniyah</a></li>
-                    </ul>
-                </li>
-                <li><a href="#struktur" class="nav-link">Struktur</a></li>
-                <li><a href="#galeri" class="nav-link">Galeri</a></li>
-                <li><a href="#berita" class="nav-link">Berita</a></li>
+                <li><a href="#pendidikan" class="nav-link">Program</a></li>
                 <li><a href="#ppdb" class="nav-link">PPDB</a></li>
+                <li><a href="#galeri" class="nav-link">Galeri</a></li>
                 <li><a href="#kontak" class="nav-link">Kontak</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            <div class="nav-right">
+                <a href="#ppdb" class="btn-nav">Daftar</a>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="home" class="hero">
+        <div class="hero-bg"></div>
         <div class="hero-content">
-            <div class="hero-text">
-                <h1>Madrasah Diniyah <span class="highlight">Talaga Kautsar</span></h1>
-                <p>Pendidikan Islami Terpadu MI • MTs • MA • Diniyah</p>
+            <div class="hero-left">
+                <div class="badge">Madrasah Islami Terpadu</div>
+                <h1 class="hero-title">
+                    <span>Membangun</span>
+                    <span>Generasi Emas</span>
+                    <span>Islam Nusantara</span>
+                </h1>
+                <p class="hero-desc">MI • MTs • MA • Diniyah | Pendidikan berkualitas berbasis Al-Qur'an dan sains modern</p>
                 <div class="hero-stats">
-                    <div class="stat">
-                        <h3>500+</h3>
-                        <p>Siswa Aktif</p>
+                    <div class="stat-item">
+                        <div class="stat-num" data-target="520">0</div>
+                        <div class="stat-label">Siswa</div>
                     </div>
-                    <div class="stat">
-                        <h3>25+</h3>
-                        <p>Guru Berkualitas</p>
+                    <div class="stat-item">
+                        <div class="stat-num" data-target="28">0</div>
+                        <div class="stat-label">Guru</div>
                     </div>
-                    <div class="stat">
-                        <h3>10+</h3>
-                        <p>Tahun Berdiri</p>
+                    <div class="stat-item">
+                        <div class="stat-num" data-target="98">0</div>
+                        <div class="stat-label">%</div>
                     </div>
                 </div>
                 <div class="hero-buttons">
-                    <a href="#ppdb" class="btn-primary">Daftar Sekarang</a>
-                    <a href="#pendidikan" class="btn-secondary">Lihat Program</a>
+                    <a href="#ppdb" class="btn-primary btn-large">Daftar PPDB 2026</a>
+                    <a href="#pendidikan" class="btn-outline">Lihat Program</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="floating-card">
-                    <i class="fas fa-graduation-cap"></i>
+            <div class="hero-right">
+                <div class="hero-illustration">
+                    <div class="student-card">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="quran-card">
+                        <i class="fas fa-book-open"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Profil Section -->
-    <section id="profil" class="profil">
+    <!-- Profil -->
+    <section id="profil" class="section profil-section">
         <div class="container">
-            <h2 class="section-title">Tentang Kami</h2>
+            <div class="section-header">
+                <span class="section-subtitle">Tentang Madrasah Kami</span>
+                <h2 class="section-title">Yayasan Talaga Kautsar Indonesia</h2>
+            </div>
             <div class="profil-grid">
-                <div class="profil-text">
-                    <p><strong>Yayasan Talaga Kautsar Indonesia</strong> didirikan pada <strong>12 Maret 2026 M / 22 Ramadhan 1447 H</strong> oleh <strong>Dr. Muhamad Afif, MA</strong> dan <strong>Eneng Yani Elviyani, S.Pd.I</strong>.</p>
-                    <div class="visi-misi">
-                        <div class="card visi">
-                            <i class="fas fa-eye"></i>
-                            <h3>Visi</h3>
-                            <p>Membangun insan beriman kuat dan berilmu tinggi</p>
+                <div class="profil-content">
+                    <div class="profil-card">
+                        <div class="card-icon primary">
+                            <i class="fas fa-calendar"></i>
                         </div>
-                        <div class="card misi">
-                            <i class="fas fa-target"></i>
-                            <h3>Misi</h3>
-                            <p>Spiritualitas kokoh, ilmu luas, akhlak mulia</p>
-                        </div>
+                        <h3>Didirikan 2026</h3>
+                        <p>12 Maret 2026 M / 22 Ramadhan 1447 H oleh Dr. Muhamad Afif, MA & Eneng Yani Elviyani, S.Pd.I</p>
                     </div>
-                    <div class="moto">
-                        <i class="fas fa-quote-left"></i>
+                    <div class="profil-card">
+                        <div class="card-icon success">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Visi Utama</h3>
+                        <p>Manusia Indonesia yang kuat iman Islamnya serta unggul ilmu pengetahuannya</p>
+                    </div>
+                    <div class="profil-card">
+                        <div class="card-icon warning">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <h3>Moto</h3>
                         <p>"Iman hanya kepada satu Tuhan, Ilmu tidak mengenal sekat, Amal untuk semua ciptaan-Nya"</p>
                     </div>
                 </div>
                 <div class="profil-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-school"></i>
+                    <div class="image-circle">
+                        <i class="fas fa-mosque"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pendidikan Section -->
-    <section id="pendidikan" class="pendidikan">
+    <!-- Program Pendidikan -->
+    <section id="pendidikan" class="section program-section">
         <div class="container">
-            <h2 class="section-title">Program Pendidikan</h2>
-            <div class="pendidikan-grid">
-                <div class="pendidikan-card mi" data-level="mi">
-                    <div class="card-icon"><i class="fas fa-seedling"></i></div>
-                    <h3>Madrasah Ibtidaiyah (MI)</h3>
-                    <p>Usia 6-12 tahun • SD Islami Terpadu</p>
-                    <ul>
-                        <li>Al-Qur'an & Tahfidz</li>
-                        <li>Matematika & IPA</li>
-                        <li>Akhlak & Adab</li>
-                    </ul>
-                    <a href="#mi" class="btn-small">Detail Program</a>
-                </div>
-                <div class="pendidikan-card mts" data-level="mts">
-                    <div class="card-icon"><i class="fas fa-seedling"></i></div>
-                    <h3>Madrasah Tsanawiyah (MTs)</h3>
-                    <p>Usia 12-15 tahun • SMP Islami</p>
-                    <ul>
-                        <li>Fiqh & Akidah</li>
-                        <li>Bahasa Arab & Inggris</li>
-                        <li>Olahraga & Seni</li>
-                    </ul>
-                    <a href="#mts" class="btn-small">Detail Program</a>
-                </div>
-                <div class="pendidikan-card ma" data-level="ma">
-                    <div class="card-icon"><i class="fas fa-seedling"></i></div>
-                    <h3>Madrasah Aliyah (MA)</h3>
-                    <p>Usia 15-18 tahun • SMA Islami</p>
-                    <ul>
-                        <li>Manasik Haji</li>
-                        <li>IPTEK & Imam</li>
-                        <li>Leadership Training</li>
-                    </ul>
-                    <a href="#ma" class="btn-small">Detail Program</a>
-                </div>
-                <div class="pendidikan-card diniyah" data-level="diniyah">
-                    <div class="card-icon"><i class="fas fa-pray"></i></div>
+            <div class="section-header">
+                <span class="section-subtitle">4 Jenjang Pendidikan</span>
+                <h2 class="section-title">Pilih Program Sesuai Usia</h2>
+            </div>
+            <div class="program-grid">
+                <div class="program-card featured">
+                    <div class="card-header">
+                        <div class="card-badge">Usia 4-6</div>
+                        <div class="card-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                    </div>
                     <h3>Madrasah Diniyah</h3>
-                    <p>Usia 4-6 tahun • TPQ Premium</p>
-                    <ul>
-                        <li>Pengenalan Huruf Hijaiyah</li>
-                        <li>Akalan & Ibadah</li>
-                        <li>Sholeh/Sholehah</li>
+                    <p>Pengenalan huruf hijaiyah, akidah, ibadah dasar</p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> Tahfidz Surah Pendek</li>
+                        <li><i class="fas fa-check"></i> Adab Anak Sholeh</li>
+                        <li><i class="fas fa-check"></i> Bermain Edukatif</li>
                     </ul>
-                    <a href="#diniyah" class="btn-small">Detail Program</a>
+                    <div class="program-price">Rp 150.000 / bulan</div>
+                    <a href="#ppdb" class="btn-primary">Daftar Diniyah</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Detail Tingkatan -->
-    <section id="mi" class="detail-level hidden">
-        <div class="container">
-            <div class="back-btn"><i class="fas fa-arrow-left"></i> Kembali</div>
-            <h2>Madrasah Ibtidaiyah</h2>
-            <div class="detail-grid">
-                <div class="detail-info">
-                    <h3>Program Unggulan MI</h3>
-                    <div class="feature">
-                        <i class="fas fa-book-open"></i>
-                        <span>Tahfidz 1 Juz</span>
+                <div class="program-card">
+                    <div class="card-header">
+                        <div class="card-badge">Kelas 1-6</div>
+                        <div class="card-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
                     </div>
-                    <div class="feature">
-                        <i class="fas fa-calculator"></i>
-                        <span>Matematika Olympiad</span>
+                    <h3>Madrasah Ibtidaiyah</h3>
+                    <p>SD Islami Terpadu dengan kurikulum nasional + agama</p>
+                    <a href="#ppdb" class="btn-outline">Pilih MI</a>
+                </div>
+                <div class="program-card">
+                    <div class="card-header">
+                        <div class="card-badge">Kelas 7-9</div>
+                        <div class="card-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
                     </div>
-                    <div class="feature">
-                        <i class="fas fa-dumbbell"></i>
-                        <span>Pramuka & PPKn</span>
+                    <h3>Madrasah Tsanawiyah</h3>
+                    <p>SMP Islami dengan fokus bahasa Arab & sains</p>
+                    <a href="#ppdb" class="btn-outline">Pilih MTs</a>
+                </div>
+                <div class="program-card">
+                    <div class="card-header">
+                        <div class="card-badge">Kelas 10-12</div>
+                        <div class="card-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
                     </div>
+                    <h3>Madrasah Aliyah</h3>
+                    <p>SMA Islami menuju PTN & pesantren top</p>
+                    <a href="#ppdb" class="btn-outline">Pilih MA</a>
                 </div>
-                <div class="detail-image">
-                    <div class="image-placeholder mi-bg">
-                        <i class="fas fa-children"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="mts" class="detail-level hidden">
-        <div class="container">
-            <div class="back-btn"><i class="fas fa-arrow-left"></i> Kembali</div>
-            <h2>Madrasah Tsanawiyah</h2>
-            <!-- Content sama seperti MI tapi beda -->
-        </div>
-    </section>
-
-    <!-- Struktur Organisasi (sama seperti sebelumnya) -->
-    <section id="struktur" class="struktur">
-        <!-- ... sama seperti kode sebelumnya ... -->
-    </section>
-
-    <!-- Galeri -->
-    <section id="galeri" class="galeri">
-        <div class="container">
-            <h2 class="section-title">Galeri Kegiatan</h2>
-            <div class="galeri-grid">
-                <div class="galeri-item" data-modal="1">
-                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400" alt="Kelas">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <div class="galeri-item" data-modal="2">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400" alt="Shalat">
-                    <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                </div>
-                <!-- 6+ foto lagi -->
-            </div>
-        </div>
-        <!-- Modal Gallery -->
-        <div class="modal" id="galeriModal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="modalImg">
-        </div>
-    </section>
-
-    <!-- Berita -->
-    <section id="berita" class="berita">
-        <div class="container">
-            <h2 class="section-title">Berita Terbaru</h2>
-            <div class="berita-grid">
-                <article class="berita-card">
-                    <div class="berita-date">15 Jan 2026</div>
-                    <h3>Pengajian Akhir Tahun</h3>
-                    <p>200 siswa mengikuti pengajian bersama Ustadz...</p>
-                    <a href="#" class="read-more">Baca Selengkapnya</a>
-                </article>
-                <!-- 5+ berita lagi -->
             </div>
         </div>
     </section>
 
     <!-- PPDB -->
-    <section id="ppdb" class="ppdb">
+    <section id="ppdb" class="section ppdb-section">
         <div class="container">
-            <h2 class="section-title">Penerimaan Peserta Didik Baru</h2>
-            <div class="ppdb-content">
+            <div class="section-header">
+                <span class="section-subtitle">Penerimaan Murid Baru</span>
+                <h2 class="section-title">Daftar Sekarang!</h2>
+            </div>
+            <div class="ppdb-grid">
                 <div class="ppdb-info">
-                    <div class="alert success">PPDB 2026/2027 TELAH DIBUKA!</div>
-                    <h3>Jadwal Pendaftaran</h3>
-                    <div class="jadwal">
-                        <div class="jadwal-item">
-                            <h4>Pendaftaran Online</h4>
-                            <p>1 Feb - 28 Feb 2026</p>
+                    <div class="alert success">
+                        <i class="fas fa-bell"></i>
+                        PPDB 2026/2027 DIBUKA!
+                    </div>
+                    <div class="jadwal-timeline">
+                        <div class="timeline-item active">
+                            <div class="timeline-date">1 Feb - 28 Feb</div>
+                            <div class="timeline-label">Pendaftaran Online</div>
                         </div>
-                        <div class="jadwal-item">
-                            <h4>Tes Seleksi</h4>
-                            <p>5 Mar 2026</p>
+                        <div class="timeline-item">
+                            <div class="timeline-date">5 Maret</div>
+                            <div class="timeline-label">Tes & Wawancara</div>
                         </div>
-                        <div class="jadwal-item">
-                            <h4>Pengumuman</h4>
-                            <p>10 Mar 2026</p>
+                        <div class="timeline-item">
+                            <div class="timeline-date">10 Maret</div>
+                            <div class="timeline-label">Pengumuman</div>
                         </div>
                     </div>
-                    <a href="#form-ppdb" class="btn-primary large">DAFTAR SEKARANG</a>
+                    <div class="contact-cta">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/6281973812240">Klik untuk Chat WA</a>
+                    </div>
                 </div>
-                <form id="form-ppdb" class="ppdb-form">
-                    <h3>Form Pendaftaran</h3>
-                    <div class="form-row">
-                        <input type="text" placeholder="Nama Lengkap" required>
-                        <input type="number" placeholder="Umur" required>
+                <form class="ppdb-form">
+                    <h3>Form Pendaftaran Online</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Nama Lengkap Anak *" required>
                     </div>
-                    <select required>
-                        <option>Jenjang yang dipilih</option>
-                        <option>MI</option>
-                        <option>MTs</option>
-                        <option>MA</option>
-                        <option>Diniyah</option>
-                    </select>
-                    <input type="tel" placeholder="No. WhatsApp" required>
-                    <textarea placeholder="Alamat Lengkap" required></textarea>
-                    <button type="submit">Kirim Pendaftaran</button>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Pilih Program *</option>
+                                <option>Diniyah</option>
+                                <option>MI</option>
+                                <option>MTs</option>
+                                <option>MA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="No. WhatsApp Orang Tua *" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Alamat Lengkap *" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Kirim Pendaftaran</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Kontak (sama seperti sebelumnya) -->
-    <section id="kontak" class="kontak">
-        <!-- ... sama ... -->
+    <!-- Galeri -->
+    <section id="galeri" class="section galeri-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Momen Berkesan</span>
+                <h2 class="section-title">Galeri Kegiatan</h2>
+            </div>
+            <div class="galeri-grid">
+                <a href="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800" class="galeri-item" data-lightbox>
+                    <div class="galeri-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400" alt="Kelas">
+                </a>
+                <a href="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800" class="galeri-item" data-lightbox>
+                    <div class="galeri-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400" alt="Shalat">
+                </a>
+                <!-- Tambah 4 foto lagi dengan pola sama -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Kunjungi Kami</span>
+                <h2 class="section-title">Hubungi Madrasah</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Telepon</h4>
+                            <a href="tel:+6281973812240">0819 7381 2240</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:yayasantalagakautsar@gmail.com">yayasantalagakautsar@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Kampung Talaga, Desa Nembol<br>Kec. Mandalawangi, Pandeglang<br>Banten</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <!-- ... sama ... -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <i class="fas fa-seedling"></i>
+                        <strong>MD Talaga Kautsar</strong>
+                    </div>
+                    <p>Madrasah Diniyah Terbaik Pandeglang</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#profil">Profil</a>
+                    <a href="#pendidikan">Program</a>
+                    <a href="#ppdb">PPDB</a>
+                </div>
+                <div class="footer-contact">
+                    <a href="tel:+6281973812240" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> 0819 7381 2240
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Yayasan Talaga Kautsar Indonesia. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
